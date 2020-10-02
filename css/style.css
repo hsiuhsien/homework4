@@ -40,6 +40,10 @@ nav a:hover , nav a:focus{
   text-decoration-line: underline;
 }
 
+.skip{
+  position: relative;
+}
+
 .skip a{
   background: white;
   left: 0;
@@ -47,15 +51,16 @@ nav a:hover , nav a:focus{
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-  position: relative;
-  top: -40px;
   /*Your code here*/
+  position: absolute;
+  top: -40px;
 }
 
 /*Your Code Here*/
 /*Write selector/rule property to position the skip class element*/
-.skip a:focus{
-  position: relative;
+
+.skip a:focus-visible{
+  position: absolute;
   top: 0px;
 }
 
